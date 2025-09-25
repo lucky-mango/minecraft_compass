@@ -2034,6 +2034,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 71.12) (xy 73.66 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f9cc66-372b-4fa1-88ab-10a988c6fddc")
+	)
+	(wire
+		(pts
 			(xy 252.73 66.04) (xy 267.97 66.04)
 		)
 		(stroke
@@ -2081,6 +2091,16 @@
 			(type default)
 		)
 		(uuid "5b94eb9b-9dc1-4968-8cc5-914d16ac4985")
+	)
+	(wire
+		(pts
+			(xy 73.66 71.12) (xy 68.58 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d67f3d9-98ac-4538-91a6-9466609a3c69")
 	)
 	(wire
 		(pts
@@ -2184,7 +2204,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 55.88) (xy 78.74 55.88)
+			(xy 68.58 66.04) (xy 78.74 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2454,6 +2474,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 130.81) (xy 73.66 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af39dc1-16c8-4c7e-bb95-1f443071d6d5")
+	)
+	(wire
+		(pts
 			(xy 328.93 138.43) (xy 344.17 138.43)
 		)
 		(stroke
@@ -2464,7 +2494,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 55.88) (xy 78.74 72.39)
+			(xy 78.74 66.04) (xy 78.74 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4431,6 +4461,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 68.58 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58b4000c-23df-4d91-98b7-43937e004a92")
+		(property "Reference" "TP4"
+			(at 57.912 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DOUT"
+			(at 61.976 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 68.58 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 68.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "098ac37b-f758-4a08-93aa-9f19df709093")
+		)
+		(instances
+			(project "new_ledMatrix"
+				(path "/7ce00b61-7069-44ef-8095-8ca0ad9d42b3"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My_Custom_Symbols:WS2812B-Mini")
 		(at 267.97 58.42 90)
 		(unit 1)
@@ -6300,7 +6394,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 68.58 55.88 90)
+		(at 68.58 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6308,7 +6402,7 @@
 		(dnp no)
 		(uuid "c1e830ab-2454-4aeb-ae01-4d0ad7b44439")
 		(property "Reference" "TP2"
-			(at 57.658 55.88 90)
+			(at 57.658 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6316,7 +6410,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 61.722 55.88 90)
+			(at 61.722 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6324,7 +6418,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
-			(at 68.58 50.8 0)
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6333,7 +6427,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 50.8 0)
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6342,7 +6436,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 68.58 55.88 0)
+			(at 68.58 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
