@@ -2,7 +2,7 @@
 
 #define LED_PIN     9
 #define LED_COUNT   56
-#define BRIGHTNESS  10
+#define BRIGHTNESS  100
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -10,6 +10,7 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 // COLOR DEFINITIONS
 // ─────────────────────────────────────────
 #define RED     strip.Color(255, 0,   0)
+#define DARK_RED strip.Color(201,24,40)
 #define GREEN   strip.Color(0,   255, 0)
 #define BLUE    strip.Color(0,   0,   255)
 #define WHITE   strip.Color(255, 255, 255)
@@ -32,7 +33,7 @@ struct LEDState {
 // add or remove LEDs freely per page
 // ─────────────────────────────────────────
 LEDState page1[] = {
-  	//{3,   RED},
+  	{3,   RED},
     {10,  RED},
     {22,  RED},
     {33,  RED},
@@ -42,9 +43,9 @@ LEDState page1[] = {
 };
 
 LEDState page2[] = {
-    //{2,   RED},
-    {11,  RED},
-    {21,  RED},
+    {5, RED},
+    {9,  RED},
+    {23,  RED},
     {22,  RED},
     {33,  RED},
     {34,  WHITE},
@@ -54,31 +55,30 @@ LEDState page2[] = {
 };
 
 LEDState page3[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
-    {55, GREEN},
-    {3,  BLUE},
+  	{8,   RED},
+    {9,   RED},
+    {22,   RED},
+    {23,   RED},
+    {33,   RED},
+    {34,  WHITE},
+    {32,  WHITE},
+    {45,  WHITE},
+    {44, WHITE}
 };
 
 LEDState page4[] = {
-    {0,  RED},
-    {1,  GREEN},
+  {33, RED},
+  {32, DARK_RED},
+  {23, RED},
+  {24, DARK_RED},
+  {8, RED},
+  {7,DARK_RED},
+  {34, WHITE},
+  {45, WHITE}
 };
 
 LEDState page5[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
-    {23, YELLOW},
-    {35, RED},
-    {42, GREEN},
-    {50, BLUE},
-    {51, YELLOW},
-    {52, RED},
-    {53, GREEN},
+  
 };
 
 LEDState page6[] = {
@@ -319,12 +319,12 @@ void setup() {
 }
 
 void loop() {
-  for(int i =0;i<2;i++){
-    // call any page like this
+  for(int i =0;i<5;i++){
+    //call any page like this
     showPage(i);   // shows page1
     delay(1000);
     };
-    //showPage(2);   
+    // showPage(4);   
     // etc
 }
 
