@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.55,
-          "width": 0.6
+          "height": 2.5,
+          "width": 2.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -188,7 +188,6 @@
       ],
       "track_widths": [
         0.0,
-        0.0,
         0.25,
         0.5,
         1.0
@@ -223,10 +222,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.4,
-          "drill": 0.2
         },
         {
           "diameter": 0.5,
@@ -516,7 +511,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "D:/.gerber/led_matrix(ver.10)/",
+      "plot": "D:/.gerber/led_matrix(ver.8)/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

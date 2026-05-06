@@ -9,17 +9,10 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 // ─────────────────────────────────────────
 // COLOR DEFINITIONS
 // ─────────────────────────────────────────
-#define RED     strip.Color(255, 0,   0)
-#define DARK_RED strip.Color(201,24,40)
-#define GREEN   strip.Color(0,   255, 0)
-#define BLUE    strip.Color(0,   0,   255)
-#define WHITE   strip.Color(255, 255, 255)
-#define YELLOW  strip.Color(255, 255, 0)
-#define CYAN    strip.Color(0,   255, 255)
-#define PURPLE  strip.Color(255, 0,   255)
-#define ORANGE  strip.Color(255, 128, 0)
-#define OFF     0
-
+#define RED      strip.Color(255, 0,   0)
+#define DARK_RED strip.Color(201, 24,  40)
+#define WHITE    strip.Color(255, 255, 255)
+#define OFF      0
 // ─────────────────────────────────────────
 // LED STATE STRUCT
 // ─────────────────────────────────────────
@@ -30,10 +23,8 @@ struct LEDState {
 
 // ─────────────────────────────────────────
 // PAGE DEFINITIONS
-// add or remove LEDs freely per page
 // ─────────────────────────────────────────
-LEDState page1[] = {
-  	{3,   RED},
+LEDState page0[] = {
     {10,  RED},
     {22,  RED},
     {33,  RED},
@@ -42,8 +33,8 @@ LEDState page1[] = {
     {45,  WHITE}
 };
 
-LEDState page2[] = {
-    {5, RED},
+LEDState page1[] = {
+    //{5,	RED},
     {9,  RED},
     {23,  RED},
     {22,  RED},
@@ -51,10 +42,9 @@ LEDState page2[] = {
     {34,  WHITE},
     {32,  WHITE},
     {45,  WHITE}
-
 };
 
-LEDState page3[] = {
+LEDState page2[] = {
   	{8,   RED},
     {9,   RED},
     {22,   RED},
@@ -66,202 +56,279 @@ LEDState page3[] = {
     {44, WHITE}
 };
 
+LEDState page3[] = {
+    {33, RED},
+    {32, DARK_RED},
+    {23, RED},
+    {24, DARK_RED},
+    {8, RED},
+    {7,DARK_RED},
+    {34, WHITE},
+    {44, WHITE}
+};
+
 LEDState page4[] = {
-  {33, RED},
-  {32, DARK_RED},
-  {23, RED},
-  {24, DARK_RED},
-  {8, RED},
-  {7,DARK_RED},
-  {34, WHITE},
-  {45, WHITE}
+    {33,  RED},
+    {32,  DARK_RED},
+    {25,  DARK_RED},
+    {24,  RED},
+    {23,  RED},
+    {34,  WHITE},
+    {44,  WHITE},
+    {43,  WHITE}
 };
 
 LEDState page5[] = {
-  
+    {23, RED},
+  	{24, RED},
+    {25, RED},
+    {26, DARK_RED},
+    {33, RED},
+    {32, DARK_RED},
+    {34, WHITE},
+    {43, WHITE},
+  	{44, WHITE}
 };
 
 LEDState page6[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
+  	{26, RED},
+    {25, RED},
+    {24, RED},
+    {31, DARK_RED},
+    {32, RED},
+    {33, RED},
+    {22, WHITE},
+    {34, WHITE},
+    {35, WHITE},
+    {45, WHITE}
 };
 
 LEDState page7[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
-    {3,  YELLOW},
+   	{29, RED},
+    {30, RED},
+    {31, RED},
+    {32, RED},
+    {33, RED},
+    {22, WHITE},
+    {34, WHITE},
+    {35, WHITE},
+    {45, WHITE}
 };
 
 LEDState page8[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
-    {23, YELLOW},
-    {35, RED},
-    {42, GREEN},
+    {33, RED},
+  	{32, RED},
+    {47, RED},
+    {48, RED},
+  	{46, DARK_RED},
+    {20, WHITE},
+    {21, WHITE},
+    {34, WHITE}
 };
 
 LEDState page9[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
-    {55, GREEN},
-    {3,  BLUE},
-    {13, YELLOW},
+  	{33, RED},
+    {32, RED},
+    {46, RED},
+    {47, RED},
+    {48, DARK_RED},
+    {21, WHITE},
+    {20, WHITE},
+    {34, WHITE},
+    {22, WHITE}
 };
 
 LEDState page10[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
-    {3,  YELLOW},
-    {4,  RED},
+  {33, RED},
+  {32, RED},
+  {47, RED},
+  {46, DARK_RED},
+  {50, DARK_RED},
+  {22, WHITE},
+  {21, WHITE},
+  {34, WHITE}
 };
 
 LEDState page11[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
+  {33, RED},
+  {46, RED},
+  {50, RED},
+  {45, DARK_RED},
+  {51, DARK_RED},
+  {21, WHITE},
+  {22, WHITE},
+  {34, WHITE},  
+  {32, WHITE}
 };
 
 LEDState page12[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
+  {22, WHITE},
+  {32, WHITE},
+  {34, WHITE},
+  {33, RED},
+  {45, RED},
+  {52, DARK_RED}
 };
 
 LEDState page13[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
-    {3,  YELLOW},
-    {4,  RED},
-    {5,  GREEN},
+  {22, WHITE},
+  {32, WHITE},
+  {34, WHITE},
+  {33, RED},
+  {45, DARK_RED},
+  {44, RED},
+  {53, RED}
 };
 
 LEDState page14[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
-    {23, YELLOW},
-    {35, RED},
-    {42, GREEN},
-    {50, BLUE},
+  {33, RED},
+  {34, RED},
+  {43, RED},
+  {44,DARK_RED},
+  {55, RED},
+  {54, DARK_RED},
+  {32, WHITE},
+  {23, WHITE}
 };
 
 LEDState page15[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
+  {33, RED},
+  {34, RED},
+  {35, DARK_RED},
+  {43, RED},
+  {44,DARK_RED},
+  {42, RED},
+  {55, DARK_RED},
+  {32, WHITE},
+  {23, WHITE},
+  {24, WHITE}
 };
 
 LEDState page16[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
-    {3,  YELLOW},
-    {4,  RED},
-    {5,  GREEN},
-    {6,  BLUE},
-    {7,  YELLOW},
-    {8,  RED},
+  {33, RED},
+  {34, RED},
+  {35, DARK_RED},
+  {43, RED},
+  {44,DARK_RED},
+  {42, RED},
+  {41, RED},
+  {32, WHITE},
+  {23, WHITE},
+  {24, WHITE}
 };
 
 LEDState page17[] = {
-    {10, RED},
-    {11, GREEN},
+  {33, RED},
+  {34, RED},
+  {35, RED},
+  {43, DARK_RED},
+  {42, RED},
+  {41, RED},
+  {22, WHITE},
+  {32, WHITE},
+  {31, WHITE},
+  {45, WHITE}
 };
 
 LEDState page18[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
-    {55, GREEN},
+  {33, RED},
+  {34, RED},
+  {35, RED},
+  {36, RED},
+  {37, RED},
+  {38, DARK_RED},
+  {22, WHITE},
+  {32, WHITE},
+  {31, WHITE},
+  {45, WHITE}
 };
 
 LEDState page19[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
+  {33, RED},
+  {34, RED},
+  {35, DARK_RED},
+  {20, RED},
+  {19, RED},
+  {18, RED},
+  {22, WHITE},
+  {32, WHITE},
+  {31, WHITE},
+  {45, WHITE}
 };
 
 LEDState page20[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
-    {23, YELLOW},
+  {33,RED},
+  {34, DARK_RED},
+  {21, RED},
+  {20, RED},
+  {19, RED},
+  {18, RED}, 
+  {32, WHITE},
+  {46, WHITE},
+  {47, WHITE}
 };
 
 LEDState page21[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
-    {55, GREEN},
-    {3,  BLUE},
-    {13, YELLOW},
-    {23, RED},
+  {33,RED},
+  {34, DARK_RED},
+  {21, RED},
+  {20, RED},
+  {19, DARK_RED},
+  {13, RED},
+  {32, WHITE},
+  {46, WHITE},
+  {47, WHITE}
+
 };
 
 LEDState page22[] = {
-    {0,  RED},
-    {1,  GREEN},
-    {2,  BLUE},
-    {3,  YELLOW},
-    {4,  RED},
-    {5,  GREEN},
-    {6,  BLUE},
+  {33,RED},
+  {34, DARK_RED},
+  {21, RED},
+  {20, RED},
+  {12, RED},
+  {13, RED}, 
+  {32, WHITE},
+  {46, WHITE},
+  {47, WHITE}
 };
 
 LEDState page23[] = {
-    {10, RED},
-    {11, GREEN},
-    {12, BLUE},
-    {23, YELLOW},
-    {35, RED},
+  {12, RED},
+  {11, RED},
+  {21, RED},
+  {22, RED},
+  {33, RED}, 
+  {32, WHITE},
+  {46, WHITE},
+  {45, WHITE},
+  {34, WHITE}
 };
 
 LEDState page24[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-    {45, RED},
-    {55, GREEN},
-    {3,  BLUE},
-    {13, YELLOW},
+    {11,RED},
+    {21,RED},
+    {22,RED},
+    {33,RED},
+    {32,WHITE},
+    {45,WHITE},
+    {34,WHITE}
 };
 
-LEDState page25[] = {
-    {5,  RED},
-    {15, GREEN},
-    {25, BLUE},
-    {35, YELLOW},
-};
 
 // ─────────────────────────────────────────
 // PAGE REGISTRY
-// sizeof auto counts LEDs per page
 // ─────────────────────────────────────────
 LEDState* pages[] = {
-    page1,  page2,  page3,  page4,  page5,
-    page6,  page7,  page8,  page9,  page10,
-    page11, page12, page13, page14, page15,
-    page16, page17, page18, page19, page20,
-    page21, page22, page23, page24, page25
+    page0,  page1,  page2,  page3,  page4,
+    page5,  page6,  page7,  page8,  page9,
+    page10, page11, page12, page13, page14,
+    page15, page16, page17, page18, page19,
+    page20, page21, page22, page23, page24
 };
 
 int pageSizes[] = {
+    sizeof(page0)  / sizeof(page0[0]),
     sizeof(page1)  / sizeof(page1[0]),
     sizeof(page2)  / sizeof(page2[0]),
     sizeof(page3)  / sizeof(page3[0]),
@@ -283,22 +350,19 @@ int pageSizes[] = {
     sizeof(page19) / sizeof(page19[0]),
     sizeof(page20) / sizeof(page20[0]),
     sizeof(page21) / sizeof(page21[0]),
-    sizeof(page21) / sizeof(page21[0]),
+    sizeof(page22) / sizeof(page22[0]),
     sizeof(page23) / sizeof(page23[0]),
     sizeof(page24) / sizeof(page24[0]),
-    sizeof(page25) / sizeof(page25[0]),
 };
 
 // ─────────────────────────────────────────
 // SHOW PAGE FUNCTION
 // ─────────────────────────────────────────
 void showPage(int pageIndex) {
-    // clear all LEDs
     for (int i = 0; i < LED_COUNT; i++) {
         strip.setPixelColor(i, OFF);
     }
 
-    // set LEDs for this page
     LEDState* page = pages[pageIndex];
     int size = pageSizes[pageIndex];
 
@@ -319,12 +383,9 @@ void setup() {
 }
 
 void loop() {
-  for(int i =0;i<5;i++){
-    //call any page like this
-    showPage(i);   // shows page1
-    delay(1000);
-    };
-    // showPage(4);   
-    // etc
+  for (int i = 0; i < 25; i++) {
+        showPage(i);
+        delay(100);  // 1 second per page, adjust as needed
+  }
+  //showPage(9);   // change index 0–26 to show any page
 }
-
