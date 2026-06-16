@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "7ce00b61-7069-44ef-8095-8ca0ad9d42b3")
 	(paper "A2")
+	(title_block
+		(title "LED_matrix")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
