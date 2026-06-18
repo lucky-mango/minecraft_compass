@@ -1,4 +1,4 @@
-26018307365590424
+26020089124797313
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103774,6 +103774,13 @@ IND_XEL4030-102MEC
 0
 2
 2
+custom_lib
+QMC5883L
+LGA-16
+Integrated Circuit
+0
+16
+16
 custom_lib
 TPS61023DRLR
 
