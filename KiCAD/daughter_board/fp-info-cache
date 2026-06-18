@@ -1,4 +1,4 @@
-26020089124797313
+26023652702792640
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103774,6 +103774,20 @@ IND_XEL4030-102MEC
 0
 2
 2
+custom_lib
+JST_PH_S2B-2mm-Horizontal
+JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
+connector JST PH horizontal
+0
+4
+3
+custom_lib
+JST_S2B-PH-SM4-TB_LF__SN_2mm_Horizontal
+
+
+0
+4
+4
 custom_lib
 QMC5883L
 LGA-16
