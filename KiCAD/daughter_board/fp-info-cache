@@ -1,4 +1,4 @@
-26023652702792640
+26025434685106597
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70999,6 +70999,13 @@ Right-angle SMD mounting Hardware, inside threaded M3, length 7m, total height 5
 threaded screw
 0
 4
+1
+My_Custom_Footprints
+Castellated_Hole_0.8mm
+
+
+0
+1
 1
 My_Custom_Footprints
 WS2812B-Mini-3535
