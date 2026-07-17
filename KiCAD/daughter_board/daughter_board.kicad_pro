@@ -188,9 +188,10 @@
       ],
       "track_widths": [
         0.0,
-        0.0,
+        0.2,
         0.3,
         0.5,
+        0.6,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -513,7 +514,7 @@
       "idf": "",
       "netlist": "",
       "plot": "../../PCB/",
-      "pos_files": "",
+      "pos_files": "./",
       "specctra_dsn": "",
       "step": "daughter_board.step",
       "svg": "",
