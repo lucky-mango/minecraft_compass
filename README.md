@@ -6,12 +6,12 @@ This repo documents my journey building a digital compass inspired by Minecraft,
 
 ### FreeCAD design
 <img width="2560" height="1600" alt="compass-1" src="Images\Preview\compass-1.jpg" />
-<img width="2560" height="1600" alt="bottom-0" src="Images\Preview\bottom-0.jpg" />
+<img width="2560" height="1600" alt="bottom-0" src="Images\Preview\bottom-0.png" />
 <img width="2560" height="1600" alt="bottom-1" src="Images\Preview\bottom-1.jpg" />
-<img width="2560" height="1600" alt="top-0" src="Images\Preview\top-0.jpg" />
+<img width="2560" height="1600" alt="top-0" src="Images\Preview\top-0.png" />
 
 ### KiCAD design
-<img width="2560" height="1600" alt="LED_matrix_front" src="Images\Preview\LED_matrix_front" />
+<img width="2560" height="1600" alt="LED_matrix_front" src="Images\Preview\LED_matrix_front.png" />
 <img width="2560" height="1600" alt="LED_matrix_back" src="Images\Preview\LED_matrix_back" />
 <img width="2560" height="1600" alt="daughter_board" src="Images\Preview\daughter_board" />
 
