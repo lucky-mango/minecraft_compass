@@ -514,9 +514,9 @@
       "idf": "",
       "netlist": "",
       "plot": "../../PCB/",
-      "pos_files": "./",
+      "pos_files": "pick/",
       "specctra_dsn": "",
-      "step": "daughter_board.step",
+      "step": "../../3D_models/daughter_board.step",
       "svg": "",
       "vrml": ""
     },
