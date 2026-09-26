@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
 #include <QMC5883LCompass.h>
 #include <Adafruit_NeoPixel.h>
 
@@ -361,6 +363,23 @@ int pageSizes[] = {
 // ─────────────────────────────────────────
 // SHOW PAGE FUNCTION
 // ─────────────────────────────────────────
+#line 364 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+void showPage(int pageIndex);
+#line 389 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+int headingToPage(float angle);
+#line 429 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+bool isQMCConnected();
+#line 435 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+void blinkSensorError();
+#line 464 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+bool scanI2C();
+#line 510 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+void updateContinuousCalibration(int rawX, int rawY, int rawZ);
+#line 541 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+void setup();
+#line 572 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
+void loop();
+#line 364 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
 void showPage(int pageIndex) {
 
     for (int i = 0; i < LED_COUNT; i++) {

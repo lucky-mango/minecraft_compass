@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "D:\\mCraft_compass\\test_code\\mag_led_render\\mag_led_render.ino"
 #include <QMC5883LCompass.h>
 #include <Adafruit_NeoPixel.h>
 
